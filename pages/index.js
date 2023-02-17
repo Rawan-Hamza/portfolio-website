@@ -139,7 +139,7 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               during my learnig journey, I've worked on few app concepts, the
-              aim was to learn new tech and algorithms.
+              aim was to learn new tech and algorithms. you can check each project by clicking on the images:
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
