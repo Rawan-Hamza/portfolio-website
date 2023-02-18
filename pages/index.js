@@ -51,8 +51,10 @@ export default function Home() {
               Junior Full Stack Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Graduated from Northcoders bootcamp, you can contact me on
-              LinkedIn or check my GitHub profile.
+              As a graduate of the Northcoders bootcamp, I would be delighted to
+              discuss my qualifications and experiences with you. Please feel
+              free to connect with me via LinkedIn or review my projects and
+              contributions on my GitHub profile. Thank you for your interest.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a
@@ -73,7 +75,13 @@ export default function Home() {
               </a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={rawan} layout="fill" objectFit="cover" priority alt="rawan hamza" />
+              <Image
+                src={rawan}
+                layout="fill"
+                objectFit="cover"
+                priority
+                alt="rawan hamza"
+              />
             </div>
           </div>
         </section>
@@ -83,12 +91,21 @@ export default function Home() {
               What is the story?
             </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            I have recently made a career change into software development from a different field. However, my interest in technology started in childhood and continued throughout my life. Although my previous career was rewarding, I realized that I was not fully engaged and that I wanted to pursue a career in technology. After researching different fields within tech, I discovered software development and found that it aligned with my interests and skills. I am excited to bring my diverse background and experiences to the software development field and to continue learning and growing in this dynamic and ever-evolving industry.
+              I have recently made a career change into software development
+              from a different field. However, my interest in technology started
+              in childhood and continued throughout my life. Although my
+              previous career was rewarding, I realized that I was not fully
+              engaged and that I wanted to pursue a career in technology. After
+              researching different fields within tech, I discovered software
+              development and found that it aligned with my interests and
+              skills. I am excited to bring my diverse background and
+              experiences to the software development field and to continue
+              learning and growing in this dynamic and ever-evolving industry.
             </p>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} alt=""/>
+              <Image src={code} width={100} height={100} alt="" />
               <h3 className="text-lg font-medium pt-8 pb-2  ">Languages</h3>
               <p className="py-2">
                 I mainly picked up JavaScript and React in the bootcamp
@@ -103,7 +120,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">CSS</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} alt=""/>
+              <Image src={design} width={100} height={100} alt="" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Planning and Design
               </h3>
@@ -118,7 +135,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Indesign</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={scrum} width={100} height={100} alt=""/>
+              <Image src={scrum} width={100} height={100} alt="" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
               <p className="py-2">
                 familiar with SCRUM and AGILE methodologies. using Kanban style
@@ -135,13 +152,24 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              during my learnig journey, I have worked on few app concepts, the
-              aim was to learn new tech and algorithms. you can check each project by clicking on the images:
+              As part of my learning journey, I have undertaken various app
+              development projects to gain experience with new technologies and
+              algorithms. These projects have enabled me to gain a deeper
+              understanding of software development best practices and provided
+              me with opportunities to enhance my skills and knowledge. I am
+              excited to share some of the projects I have completed, which
+              showcase my ability and understanding of the field so far. Please
+              click on the following images to explore each project in more
+              detail:
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
-              <a href="https://rwn-news.netlify.app/" target="_blank" rel="noreferrer">
+              <a
+                href="https://rwn-news.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Image
                   className="rounded-lg object-cover"
                   width={"100%"}
@@ -153,7 +181,11 @@ export default function Home() {
               </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <a href="https://imboard.netlify.app/" target="_blank" rel="noreferrer">
+              <a
+                href="https://imboard.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Image
                   className="rounded-lg object-cover"
                   width={"100%"}
