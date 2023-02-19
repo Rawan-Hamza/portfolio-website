@@ -23,7 +23,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">Portfolio</h1>
+            <h1 className="font-medium text-xl">Hello World !</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -80,7 +80,7 @@ export default function Home() {
                 layout="fill"
                 objectFit="cover"
                 priority
-                alt="rawan hamza"
+                alt="developer"
               />
             </div>
           </div>
@@ -164,14 +164,14 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
+            <div className="basis-1/3 flex-1 border-4 border-teal-600 rounded-lg">
               <a
                 href="https://rwn-news.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Image
-                  className="rounded-lg object-cover"
+                  className="object-cover rounded-md"
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
@@ -180,14 +180,14 @@ export default function Home() {
                 />
               </a>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 border-4 border-teal-600 rounded-lg">
               <a
                 href="https://imboard.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Image
-                  className="rounded-lg object-cover"
+                  className="object-cover rounded-md"
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
