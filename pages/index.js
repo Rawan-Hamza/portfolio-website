@@ -8,7 +8,7 @@ import design from "../public/design.png";
 import scrum from "../public/scrum.png";
 import Image from "next/image";
 import rwnNews from "../public/rwn.png";
-import imBoard from "../public/imboard.png";
+import rwnChat from "../public/rwnchat.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -113,7 +113,9 @@ export default function Home() {
               <h4 className="py-4 text-teal-600">
                 languages I am familiar with
               </h4>
-              <p className="text-gray-800 py-1">Next.JS</p>
+              <p className="text-gray-800 py-1">ReactJS</p>
+              <p className="text-gray-800 py-1">PHP</p>
+              <p className="text-gray-800 py-1">NextJS</p>
               <p className="text-gray-800 py-1">PSQL</p>
               <p className="text-gray-800 py-1">HTML</p>
               <p className="text-gray-800 py-1">Tailwind CSS</p>
@@ -182,7 +184,7 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1 border-4 border-teal-600 rounded-lg">
               <a
-                href="https://imboard.netlify.app/"
+                href="https://rwn-chat.adaptable.app"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -191,7 +193,7 @@ export default function Home() {
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
-                  src={imBoard}
+                  src={rwnChat}
                   alt="website collage"
                 />
               </a>
