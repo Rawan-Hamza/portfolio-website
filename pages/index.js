@@ -54,11 +54,11 @@ export default function Home() {
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               As a passionate software developer, I am excited to connect with
               you and share my skills and experience. I completed the rigorous
-              Northcoders bootcamp where I honed my coding abilities, and I've
+              Northcoders bootcamp where I honed my coding abilities, and I have
               since contributed to a variety of projects on my GitHub profile.
-              Whether you're interested in discussing my qualifications or want
-              to collaborate on a new project, I'm eager to hear from you. Let's
-              connect on LinkedIn and start the conversation!
+              Whether you are interested in discussing my qualifications or want
+              to collaborate on a new project, I am eager to hear from you. Let
+              us connect on LinkedIn and start the conversation!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a
@@ -94,13 +94,13 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white">About Me</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               With a diverse background in pharmaceuticals, I bring a unique
-              perspective to the software development industry. I've always had
-              a passion for technology, and after making a career change into
-              software development, I'm excited to continue learning and growing
-              in this dynamic field. Some of my recent projects include a
-              reddit-like news website and a chat app, where I utilized my
-              skills in NodeJS, ReactJS, SQL and Socket. I'm driven by a desire
-              to solve problems and create innovative solutions, and I'm
+              perspective to the software development industry. I have always
+              had a passion for technology, and after making a career change
+              into software development, I am excited to continue learning and
+              growing in this dynamic field. Some of my recent projects include
+              a reddit-like news website and a chat app, where I utilized my
+              skills in NodeJS, ReactJS, SQL and Socket. I am driven by a desire
+              to solve problems and create innovative solutions, and I am
               committed to delivering high-quality work that meets the needs of
               my clients and users.
             </p>
