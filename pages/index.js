@@ -9,7 +9,6 @@ import scrum from "../public/scrum.png";
 import Image from "next/image";
 import rwnNews from "../public/rwn.png";
 import rwnChat from "../public/rwnchat.png";
-import Script from "next/script";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -24,25 +23,22 @@ export default function Home() {
       <main className="bg-gray-100 dark:bg-gray-900 px-10 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-medium text-xl">Hello World !</h1>
-            <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
-                />
-              </li>
-              <li>
-                <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="https://drive.google.com/file/d/1Q9NrcqNqJPuwZz0fRaq74xDME3uVNKi6/view?usp=share_link"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Resume
-                </a>
-              </li>
-            </ul>
+            <div className="flex items-center">
+              <BsFillMoonStarsFill
+                onClick={() => setDarkMode(!darkMode)}
+                className=" cursor-pointer text-2xl"
+              />
+            </div>
+            <div className="flex items-center">
+              <a
+                className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                href="https://drive.google.com/file/d/1Q9NrcqNqJPuwZz0fRaq74xDME3uVNKi6/view?usp=share_link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume
+              </a>
+            </div>
           </nav>
           <div className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
@@ -109,14 +105,12 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={code} width={100} height={100} alt="" />
               <h3 className="text-lg text-teal-600 font-extrabold font-medium pt-8 pb-2  ">
-                Languages
+                Stack
               </h3>
               <p className="py-2">
                 I mainly picked up JavaScript and React in the bootcamp
               </p>
-              <h4 className="py-4 text-teal-600">
-                languages I am familiar with
-              </h4>
+              <h4 className="py-4 text-teal-600">I am familiar with</h4>
               <div className="flex flex-wrap justify-center gap-4 py-4">
                 <div className="flex flex-col items-center">
                   <i className="fab fa-react text-3xl text-gray-800"></i>
@@ -156,10 +150,10 @@ export default function Home() {
                 Planning and Design
               </h3>
               <p className="py-2">
-                plan app component trees and create wireframes to visualise
+                Plan app component trees and create wireframes to visualise
                 concepts
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
+              <h4 className="py-4 text-teal-600">I am familiar with</h4>
               <div className="flex flex-wrap justify-center gap-4 py-4">
                 <div className="flex flex-col items-center">
                   <i className="fab fa-brands fa-figma text-3xl text-gray-800"></i>
@@ -181,14 +175,14 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={scrum} width={100} height={100} alt="" />
-              <h3 className="text-teal-600 font-extrabold font-medium pt-8 pb-2 ">
-                Consulting
+              <h3 className="text-lg text-teal-600 font-extrabold font-medium pt-8 pb-2 ">
+                Task Management
               </h3>
               <p className="py-2">
-                familiar with SCRUM and AGILE methodologies. using Kanban style
+                Familiar with SCRUM and AGILE methodologies. using Kanban style
                 tickets to process and complete tasks
               </p>
-              <h4 className="py-4 text-teal-600">SCRUM Tools I Use</h4>
+              <h4 className="py-4 text-teal-600">I am familiar with</h4>
               <div className="flex flex-col items-center">
                 <i className="fab fa-brands fa-trello text-3xl text-gray-800"></i>
                 <span className="text-sm text-gray-800 py-1">Trello</span>
@@ -206,7 +200,7 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white ">Projects</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               As part of my learning journey, I have undertaken various app
               development projects to gain experience with new technologies and
@@ -216,7 +210,7 @@ export default function Home() {
               excited to share some of the projects I have completed, which
               showcase my ability and understanding of the field so far. Please
               click on the following images to explore each project in more
-              detail:
+              detail
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
