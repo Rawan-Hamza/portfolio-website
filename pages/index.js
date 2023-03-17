@@ -32,7 +32,7 @@ export default function Home() {
             <div className="flex items-center">
               <a
                 className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                href="https://drive.google.com/file/d/1Q9NrcqNqJPuwZz0fRaq74xDME3uVNKi6/view?usp=share_link"
+                href="https://drive.google.com/file/d/1UCd9-oVZkzso-433cqiFmiWyGra4k4oZ/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
