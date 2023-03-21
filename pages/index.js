@@ -16,7 +16,10 @@ export default function Home() {
     <div className={!darkMode ? "dark" : ""}>
       <Head>
         <title>Rawan Hamza</title>
-        <meta name="description" content="Rawan H portfolio developed using NextJS" />
+        <meta
+          name="description"
+          content="Rawan H portfolio developed using NextJS"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-gray-100 dark:bg-gray-900 px-10 md:px-20 lg:px-40">
@@ -46,9 +49,7 @@ export default function Home() {
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               JUNIOR FULL STACK DEVELOPER
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-
-            </p>
+            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl"></p>
             <div className="text-7xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a
                 href="http://www.linkedin.com/in/rawan-hamza"
@@ -79,11 +80,11 @@ export default function Home() {
           </div>
         </section>
         <section>
-        <div>
+          <div>
             <h3 className="text-5xl py-1 dark:text-white">CURRENT STACK</h3>
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <div className="flex flex-wrap justify-center gap-10 py-1">
-              <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center">
                   <i className="fab fa-js text-8xl text-gray-800"></i>
                   <span className="text-lg text-gray-800 py-2">JavaScript</span>
                 </div>
@@ -113,9 +114,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col items-center">
                   <i className="fas fa-crown text-8xl text-gray-800"></i>
-                  <span className="text-lg text-gray-800 py-2">
-                    JEST
-                  </span>
+                  <span className="text-lg text-gray-800 py-2">JEST</span>
                 </div>
               </div>
             </div>
@@ -123,13 +122,14 @@ export default function Home() {
           <div>
             <h3 className="text-5xl py-1 dark:text-white py-10">ABOUT ME</h3>
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
-             I've always been interested in the technology field. As I've switched careers, I'm motivated to keep learning and improving in this exciting profession
+              I have always been interested in the technology field. now that I
+              switched careers, I am motivated to keep learning and improving in
+              this exciting profession
             </p>
           </div>
           <div className="lg:flex gap-10">
-            
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} alt="" />
+              <Image src={design} width={100} height={100} alt="design tools" />
               <h3 className="text-xl text-teal-600 font-extrabold font-xl pt-8 pb-2 ">
                 PLANNING & DESIGN
               </h3>
@@ -158,22 +158,21 @@ export default function Home() {
                 TASK MANAGEMENT
               </h3>
               <p className="text-lg py-2">
-                Familiar with SCRUM and AGILE methodologies. using Kanban style
-                tickets to process and complete tasks
+                Familiar with SCRUM, AGILE methodologies and Kanban
               </p>
               <div className="flex flex-wrap justify-center gap-9 py-9">
-              <div className="flex flex-col items-center">
-                <i className="fab fa-trello text-5xl text-gray-800"></i>
-                <span className="text-lg text-gray-800 py-2">Trello</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <i className="fab fa-n text-5xl text-gray-800"></i>
-                <span className="text-lg text-gray-800 py-2">Notion</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <i className="fab fa-linux text-5xl text-gray-800"></i>
-                <span className="text-lg text-gray-800 py-2">Linux</span>
-              </div>
+                <div className="flex flex-col items-center">
+                  <i className="fab fa-trello text-5xl text-gray-800"></i>
+                  <span className="text-lg text-gray-800 py-2">Trello</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <i className="fab fa-n text-5xl text-gray-800"></i>
+                  <span className="text-lg text-gray-800 py-2">Notion</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <i className="fab fa-linux text-5xl text-gray-800"></i>
+                  <span className="text-lg text-gray-800 py-2">Linux</span>
+                </div>
               </div>
             </div>
           </div>
@@ -182,11 +181,13 @@ export default function Home() {
           <div>
             <h3 className="text-5xl py-1 dark:text-white py-10">PROJECTS</h3>
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
-            These projects have given me a better grasp of software development practices such as writing clean, efficient and maintainable code.
-            <br />
-            <br />
-            <br />
-            Hover on each project to see more details.
+              These projects have given me a better grasp of software
+              development practices such as writing clean, efficient and
+              maintainable code.
+              <br />
+              <br />
+              <br />
+              Hover on each project to see more details.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -207,9 +208,26 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-50 transition-all duration-300 opacity-0 hover:opacity-100">
                     <div className="flex flex-col items-center">
-                      <p className="py-1">ReactJS</p>
-                      <p className="py-1">NodeJS</p>
-                      <p className="py-1">PostgreSQL</p>
+                      <p className="py-5">
+                        This project uses a RESTful API that connects to the
+                        northcoders NC-NEWS database, back end project can be
+                        found {""}
+                        <a href="https://github.com/Rawan-Hamza/rwn-news">
+                          here
+                        </a>
+                      </p>
+                      <span>
+                        <img src="https://img.icons8.com/color/50/null/react-native.png" />
+                        <p className="py-1">ReactJS</p>
+                      </span>
+                      <span>
+                        <img src="https://img.icons8.com/fluency/50/null/node-js.png" />
+                        <p className="py-1">NodeJS</p>
+                      </span>
+                      <span>
+                        <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/50/null/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-color-tal-revivo.png" />
+                        <p className="py-1">PSQL</p>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -232,9 +250,24 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-50 transition-all duration-300 opacity-0 hover:opacity-100">
                     <div className="flex flex-col items-center">
-                      <p className="py-1">NodeJS</p>
-                      <p className="py-1">Socket.io</p>
-                      <p className="py-1">Express</p>
+                      <p className="py-1">
+                        A chat application that contains rooms to discuss
+                        different topics, it contains a chat bot that greets and
+                        notifies other users when another user joins or leaves.
+                        Stack used to develope:{" "}
+                      </p>
+                      <span>
+                        <img src="https://img.icons8.com/fluency/50/null/node-js.png" />
+                        <p className="py-1">NodeJS</p>
+                      </span>
+                      <span>
+                        <img src="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/50/null/external-socket-ecology-vitaliy-gorbachev-blue-vitaly-gorbachev.png" />
+                        <p className="py-1">Socket.io</p>
+                      </span>
+                      <span>
+                        <img src="https://img.icons8.com/external-bearicons-blue-bearicons/50/null/external-Express-post-office-bearicons-blue-bearicons.png" />
+                        <p className="py-1">Express</p>
+                      </span>
                     </div>
                   </div>
                 </div>
