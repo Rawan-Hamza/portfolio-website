@@ -213,7 +213,7 @@ export default function Home() {
                           This project uses a RESTful API that connects to the
                           northcoders NC-NEWS database, back end project can be
                           found {""}
-                          <a href="https://github.com/Rawan-Hamza/rwn-news">
+                          <a href="https://github.com/Rawan-Hamza/rwn-news" className="no-underline hover:underline text-teal-400">
                             here
                           </a>
                         </p>
