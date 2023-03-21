@@ -34,7 +34,7 @@ export default function Home() {
             <div className="flex items-center">
               <a
                 className="bg-gradient-to-r from-cyan-500 text-xl to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                href="https://drive.google.com/file/d/1UCd9-oVZkzso-433cqiFmiWyGra4k4oZ/view?usp=sharing"
+                href="https://drive.google.com/file/d/1pL90PCQ5tSPeRhgkbq2E2wca9uCbZtaX/view?usp=share_link"
                 target="_blank"
                 rel="noreferrer"
               >
