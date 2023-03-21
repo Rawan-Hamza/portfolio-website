@@ -207,27 +207,31 @@ export default function Home() {
                     alt="website collage"
                   />
                   <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-50 transition-all duration-300 opacity-0 hover:opacity-100">
-                    <div className="flex flex-col items-center">
-                      <p className="py-5">
-                        This project uses a RESTful API that connects to the
-                        northcoders NC-NEWS database, back end project can be
-                        found {""}
-                        <a href="https://github.com/Rawan-Hamza/rwn-news">
-                          here
-                        </a>
-                      </p>
-                      <span>
-                        <img src="https://img.icons8.com/color/50/null/react-native.png" />
-                        <p className="py-1">ReactJS</p>
-                      </span>
-                      <span>
-                        <img src="https://img.icons8.com/fluency/50/null/node-js.png" />
-                        <p className="py-1">NodeJS</p>
-                      </span>
-                      <span>
-                        <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/50/null/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-color-tal-revivo.png" />
-                        <p className="py-1">PSQL</p>
-                      </span>
+                    <div className="flex flex-wrap justify-center">
+                      <div className="flex flex-col items-center">
+                        <p className="py-4 px-3">
+                          This project uses a RESTful API that connects to the
+                          northcoders NC-NEWS database, back end project can be
+                          found {""}
+                          <a href="https://github.com/Rawan-Hamza/rwn-news">
+                            here
+                          </a>
+                        </p>
+                      </div>
+                      <div className="flex flex-col items-center">
+                        <span>
+                          <img src="https://img.icons8.com/color/50/null/react-native.png" />
+                          <p className="py-1">ReactJS</p>
+                        </span>
+                        <span>
+                          <img src="https://img.icons8.com/fluency/50/null/node-js.png" />
+                          <p className="py-1">NodeJS</p>
+                        </span>
+                        <span>
+                          <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/50/null/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-color-tal-revivo.png" />
+                          <p className="py-1">PSQL</p>
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -249,25 +253,29 @@ export default function Home() {
                     alt="website collage"
                   />
                   <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-50 transition-all duration-300 opacity-0 hover:opacity-100">
-                    <div className="flex flex-col items-center">
-                      <p className="py-1">
-                        A chat application that contains rooms to discuss
-                        different topics, it contains a chat bot that greets and
-                        notifies other users when another user joins or leaves.
-                        Stack used to develope:{" "}
-                      </p>
-                      <span>
-                        <img src="https://img.icons8.com/fluency/50/null/node-js.png" />
-                        <p className="py-1">NodeJS</p>
-                      </span>
-                      <span>
-                        <img src="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/50/null/external-socket-ecology-vitaliy-gorbachev-blue-vitaly-gorbachev.png" />
-                        <p className="py-1">Socket.io</p>
-                      </span>
-                      <span>
-                        <img src="https://img.icons8.com/external-bearicons-blue-bearicons/50/null/external-Express-post-office-bearicons-blue-bearicons.png" />
-                        <p className="py-1">Express</p>
-                      </span>
+                    <div className="flex flex-wrap justify-center">
+                      <div className="flex flex-col items-center">
+                        <p className="py-1 px-3">
+                          A chat application that contains rooms to discuss
+                          different topics, it contains a chat bot that greets
+                          and notifies other users when another user joins or
+                          leaves. Stack used to develope:{" "}
+                        </p>
+                      </div>
+                      <div className="flex flex-col items-center">
+                        <span>
+                          <img src="https://img.icons8.com/fluency/50/null/node-js.png" />
+                          <p className="py-1">NodeJS</p>
+                        </span>
+                        <span>
+                          <img src="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/50/null/external-socket-ecology-vitaliy-gorbachev-blue-vitaly-gorbachev.png" />
+                          <p className="py-1">Socket.io</p>
+                        </span>
+                        <span>
+                          <img src="https://img.icons8.com/external-bearicons-blue-bearicons/50/null/external-Express-post-office-bearicons-blue-bearicons.png" />
+                          <p className="py-1">Express</p>
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
