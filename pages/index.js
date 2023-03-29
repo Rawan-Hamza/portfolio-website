@@ -1,7 +1,5 @@
 import Head from "next/head";
 import { AiFillLinkedin, AiFillGithub, AiFillFilePdf } from "react-icons/ai";
-
-import { useState } from "react";
 import rawan from "../public/rawan.png";
 import design from "../public/design.png";
 import scrum from "../public/scrum.png";
@@ -20,7 +18,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gray-200 dark:bg-gray-900 px-10 md:px-20 lg:px-40">
+      <main className="dark:bg-gray-900 px-10 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <div className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-7xl">
@@ -168,14 +166,14 @@ export default function Home() {
         <section className="py-10">
           <div>
             <h3 className="text-5xl py-1 dark:text-white py-10">PROJECTS</h3>
-            <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <div className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
               These projects have given me a better grasp of software
               development practices such as writing clean, efficient and
               maintainable code.
               <br />
               <br />
               Hover on each project to see more details.
-            </p>
+            </div>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 border-4 border-teal-600 rounded-lg">
@@ -196,12 +194,13 @@ export default function Home() {
                   <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-90 transition-all duration-300 opacity-0 hover:opacity-100">
                     <div className="flex flex-wrap justify-center">
                       <div className="flex flex-col items-center">
-                        <p className="py-4 px-3">
+                        <div className="py-4 px-3">
                           This project uses a RESTful API {""}
                           <a
                             href="https://rwn-news.onrender.com/api"
                             className="no-underline hover:underline text-teal-400"
                             target="_blank"
+                            rel="noreferrer"
                           >
                             here
                           </a>
@@ -211,23 +210,39 @@ export default function Home() {
                             href="https://github.com/Rawan-Hamza/rwn-news"
                             className="no-underline hover:underline text-teal-400"
                             target="_blank"
+                            rel="noreferrer"
                           >
                             here
                           </a>
                           {""} and anywhere else to view this project
-                        </p>
+                        </div>
                       </div>
                       <div className="flex flex-row items-center py-6">
                         <span className="grid justify-items-center px-3">
-                          <img src="https://img.icons8.com/color/50/null/react-native.png" />
+                          <Image
+                            src="https://img.icons8.com/color/50/null/react-native.png"
+                            alt="stack icon"
+                            height={50}
+                            width={50}
+                          />
                           <p className="py-1">ReactJS</p>
                         </span>
                         <span className="grid justify-items-center px-3">
-                          <img src="https://img.icons8.com/fluency/50/null/node-js.png" />
+                          <Image
+                            src="https://img.icons8.com/fluency/50/null/node-js.png"
+                            alt="stack icon"
+                            height={50}
+                            width={50}
+                          />
                           <p className="py-1">NodeJS</p>
                         </span>
                         <span className="grid justify-items-center px-3">
-                          <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/50/null/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-color-tal-revivo.png" />
+                          <Image
+                            src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/50/null/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-color-tal-revivo.png"
+                            alt="stack icon"
+                            height={50}
+                            width={50}
+                          />
                           <p className="py-1">PSQL</p>
                         </span>
                       </div>
@@ -254,7 +269,7 @@ export default function Home() {
                   <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-90 transition-all duration-300 opacity-0 hover:opacity-100">
                     <div className="flex flex-wrap justify-center">
                       <div className="flex flex-col items-center">
-                        <p className="py-4 px-3">
+                        <div className="py-4 px-3">
                           A chat application that contains rooms to discuss
                           different topics, it contains a chat bot that greets
                           and notifies other users when another user joins or
@@ -263,23 +278,39 @@ export default function Home() {
                             href="https://github.com/Rawan-Hamza/RWN-Chat"
                             className="no-underline hover:underline text-teal-400"
                             target="_blank"
+                            rel="noreferrer"
                           >
                             here
                           </a>
                           {""} and anywhere else to view this project
-                        </p>
+                        </div>
                       </div>
                       <div className="flex flex-row items-center py-6">
                         <span className="grid justify-items-center px-3">
-                          <img src="https://img.icons8.com/fluency/50/null/node-js.png" />
+                          <Image
+                            src="https://img.icons8.com/fluency/50/null/node-js.png"
+                            alt="stack icon"
+                            height={50}
+                            width={50}
+                          />
                           <p className="py-1">NodeJS</p>
                         </span>
                         <span className="grid justify-items-center px-3">
-                          <img src="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/50/null/external-socket-ecology-vitaliy-gorbachev-blue-vitaly-gorbachev.png" />
+                          <Image
+                            src="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/50/null/external-socket-ecology-vitaliy-gorbachev-blue-vitaly-gorbachev.png"
+                            alt="stack icon"
+                            height={50}
+                            width={50}
+                          />
                           <p className="py-1">Socket.io</p>
                         </span>
                         <span className="grid justify-items-center px-3">
-                          <img src="https://img.icons8.com/external-bearicons-blue-bearicons/50/null/external-Express-post-office-bearicons-blue-bearicons.png" />
+                          <Image
+                            src="https://img.icons8.com/external-bearicons-blue-bearicons/50/null/external-Express-post-office-bearicons-blue-bearicons.png"
+                            alt="stack icon"
+                            height={50}
+                            width={50}
+                          />
                           <p className="py-1">Express</p>
                         </span>
                       </div>
