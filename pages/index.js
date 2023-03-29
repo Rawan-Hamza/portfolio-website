@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { AiFillLinkedin, AiFillGithub, AiFillFilePdf } from "react-icons/ai";
+
 import { useState } from "react";
 import rawan from "../public/rawan.png";
 import design from "../public/design.png";
@@ -10,10 +10,8 @@ import rwnNews from "../public/rwn.png";
 import rwnChat from "../public/rwnchat.png";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
-
   return (
-    <div className={!darkMode ? "dark" : ""}>
+    <div className={"dark"}>
       <Head>
         <title>Rawan Hamza</title>
         <meta
@@ -22,26 +20,8 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gray-100 dark:bg-gray-900 px-10 md:px-20 lg:px-40">
+      <main className="bg-gray-200 dark:bg-gray-900 px-10 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <div className="flex items-center">
-              <BsFillMoonStarsFill
-                onClick={() => setDarkMode(!darkMode)}
-                className=" cursor-pointer text-2xl"
-              />
-            </div>
-            <div className="flex items-center">
-              <a
-                className="bg-gradient-to-r from-cyan-500 text-xl to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                href="https://drive.google.com/file/d/1pL90PCQ5tSPeRhgkbq2E2wca9uCbZtaX/view?usp=share_link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Resume
-              </a>
-            </div>
-          </nav>
           <div className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-7xl">
               RAWAN HAMZA
@@ -66,6 +46,14 @@ export default function Home() {
                 rel="noreferrer"
               >
                 <AiFillGithub />
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1pL90PCQ5tSPeRhgkbq2E2wca9uCbZtaX/view?usp=share_link"
+                target="_blank"
+                className="cursor-pointer"
+                rel="noreferrer"
+              >
+                <AiFillFilePdf />
               </a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
@@ -121,10 +109,10 @@ export default function Home() {
           </div>
           <div>
             <h3 className="text-5xl py-1 dark:text-white py-10">ABOUT ME</h3>
-            <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I have always been interested in the technology field. now that I
-              switched careers, I am motivated to keep learning and improving in
-              this exciting profession
+            <p className="text-xl py-1 leading-8 text-gray-800 dark:text-gray-200">
+              I am interested in everything technology. I keep up to date with
+              recent tech news. Now that I switched careers, I am motivated to
+              keep learning and improving in this exciting profession
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -186,7 +174,6 @@ export default function Home() {
               maintainable code.
               <br />
               <br />
-              <br />
               Hover on each project to see more details.
             </p>
           </div>
@@ -206,28 +193,40 @@ export default function Home() {
                     src={rwnNews}
                     alt="website collage"
                   />
-                  <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-50 transition-all duration-300 opacity-0 hover:opacity-100">
+                  <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-90 transition-all duration-300 opacity-0 hover:opacity-100">
                     <div className="flex flex-wrap justify-center">
                       <div className="flex flex-col items-center">
                         <p className="py-4 px-3">
-                          This project uses a RESTful API that connects to the
-                          northcoders NC-NEWS database, back end project can be
-                          found {""}
-                          <a href="https://github.com/Rawan-Hamza/rwn-news" className="no-underline hover:underline text-teal-400">
+                          This project uses a RESTful API {""}
+                          <a
+                            href="https://rwn-news.onrender.com/api"
+                            className="no-underline hover:underline text-teal-400"
+                            target="_blank"
+                          >
                             here
                           </a>
+                          {""} that connects to the northcoders NC-NEWS
+                          database, back end project can be found {""}
+                          <a
+                            href="https://github.com/Rawan-Hamza/rwn-news"
+                            className="no-underline hover:underline text-teal-400"
+                            target="_blank"
+                          >
+                            here
+                          </a>
+                          {""} and anywhere else to view this project
                         </p>
                       </div>
-                      <div className="flex flex-col items-center">
-                        <span>
+                      <div className="flex flex-row items-center py-6">
+                        <span className="grid justify-items-center px-3">
                           <img src="https://img.icons8.com/color/50/null/react-native.png" />
                           <p className="py-1">ReactJS</p>
                         </span>
-                        <span>
+                        <span className="grid justify-items-center px-3">
                           <img src="https://img.icons8.com/fluency/50/null/node-js.png" />
                           <p className="py-1">NodeJS</p>
                         </span>
-                        <span>
+                        <span className="grid justify-items-center px-3">
                           <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/50/null/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-color-tal-revivo.png" />
                           <p className="py-1">PSQL</p>
                         </span>
@@ -252,26 +251,34 @@ export default function Home() {
                     src={rwnChat}
                     alt="website collage"
                   />
-                  <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-50 transition-all duration-300 opacity-0 hover:opacity-100">
+                  <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-90 transition-all duration-300 opacity-0 hover:opacity-100">
                     <div className="flex flex-wrap justify-center">
                       <div className="flex flex-col items-center">
-                        <p className="py-1 px-3">
+                        <p className="py-4 px-3">
                           A chat application that contains rooms to discuss
                           different topics, it contains a chat bot that greets
                           and notifies other users when another user joins or
-                          leaves. Stack used to develope:{" "}
+                          leaves. you can find the Github repo {""}
+                          <a
+                            href="https://github.com/Rawan-Hamza/RWN-Chat"
+                            className="no-underline hover:underline text-teal-400"
+                            target="_blank"
+                          >
+                            here
+                          </a>
+                          {""} and anywhere else to view this project
                         </p>
                       </div>
-                      <div className="flex flex-col items-center">
-                        <span>
+                      <div className="flex flex-row items-center py-6">
+                        <span className="grid justify-items-center px-3">
                           <img src="https://img.icons8.com/fluency/50/null/node-js.png" />
                           <p className="py-1">NodeJS</p>
                         </span>
-                        <span>
+                        <span className="grid justify-items-center px-3">
                           <img src="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/50/null/external-socket-ecology-vitaliy-gorbachev-blue-vitaly-gorbachev.png" />
                           <p className="py-1">Socket.io</p>
                         </span>
-                        <span>
+                        <span className="grid justify-items-center px-3">
                           <img src="https://img.icons8.com/external-bearicons-blue-bearicons/50/null/external-Express-post-office-bearicons-blue-bearicons.png" />
                           <p className="py-1">Express</p>
                         </span>
