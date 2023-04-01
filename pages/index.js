@@ -75,6 +75,10 @@ export default function Home() {
                   <span className="text-lg text-gray-800 py-2">JavaScript</span>
                 </div>
                 <div className="flex flex-col items-center">
+                  <i className="fab fa-node-js text-8xl text-gray-800"></i>
+                  <span className="text-lg text-gray-800 py-2">NodeJS</span>
+                </div>
+                <div className="flex flex-col items-center">
                   <i className="fab fa-react text-8xl text-gray-800"></i>
                   <span className="text-lg text-gray-800 py-2">ReactJS</span>
                 </div>
@@ -83,8 +87,8 @@ export default function Home() {
                   <span className="text-lg text-gray-800 py-2">PHP</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <i className="fab fa-node-js text-8xl text-gray-800"></i>
-                  <span className="text-lg text-gray-800 py-2">NodeJS</span>
+                  <i className="fab fa-laravel text-8xl text-gray-800"></i>
+                  <span className="text-lg text-gray-800 py-2">Laravel</span>
                 </div>
                 <div className="flex flex-col items-center">
                   <i className="fas fa-database text-8xl text-gray-800"></i>
@@ -108,9 +112,7 @@ export default function Home() {
           <div>
             <h3 className="text-5xl py-1 dark:text-white py-10">ABOUT ME</h3>
             <p className="text-xl py-1 leading-8 text-gray-800 dark:text-gray-200">
-              I am interested in everything technology. I keep up to date with
-              recent tech news. Now that I switched careers, I am motivated to
-              keep learning and improving in this exciting profession
+              An experienced pharmacist with a passion for technology, I keep up to date with tech news, tools and latest frameworks. with a keen eye for writing and developing clean, maintainable and readable code. After finishing an intense learning experience at Northcoders bootcamp, I am ready to embark on my journey in this field.
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -167,9 +169,9 @@ export default function Home() {
           <div>
             <h3 className="text-5xl py-1 dark:text-white py-10">PROJECTS</h3>
             <div className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
-              These projects have given me a better grasp of software
+              These projects have given me a better grasp of good software
               development practices such as writing clean, efficient and
-              maintainable code.
+              maintainable code. I will keep updating this section with more projects as I learn new technologies in my journey
               <br />
               <br />
               Hover on each project to see more details.
