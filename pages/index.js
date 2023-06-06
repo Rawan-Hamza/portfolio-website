@@ -83,12 +83,12 @@ export default function Home() {
                   <span className="text-lg text-gray-800 py-2">ReactJS</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <i className="fab fa-php text-8xl text-gray-800"></i>
-                  <span className="text-lg text-gray-800 py-2">PHP</span>
+                  <i className="fab fa-microsoft text-8xl text-gray-800"></i>
+                  <span className="text-lg text-gray-800 py-2">Blazor</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <i className="fab fa-laravel text-8xl text-gray-800"></i>
-                  <span className="text-lg text-gray-800 py-2">Laravel</span>
+                  <i className="fab fa-php text-8xl text-gray-800"></i>
+                  <span className="text-lg text-gray-800 py-2">PHP</span>
                 </div>
                 <div className="flex flex-col items-center">
                   <i className="fas fa-database text-8xl text-gray-800"></i>
@@ -146,7 +146,7 @@ export default function Home() {
                 TASK MANAGEMENT
               </h3>
               <p className="text-lg py-2">
-                Familiar with SCRUM, AGILE methodologies and Kanban
+                Familiar with AGILE philosiphy, and SCRUM methodologies and Kanban
               </p>
               <div className="flex flex-wrap justify-center gap-9 py-9">
                 <div className="flex flex-col items-center">
