@@ -6,10 +6,11 @@ import scrum from "../public/scrum.png";
 import Image from "next/image";
 import rwnNews from "../public/rwn.png";
 import rwnChat from "../public/rwnchat.png";
+import tictacgo from "../public/tictacgo.png";
 
 export default function Home() {
   return (
-    <div className={"dark"}>
+    <div className="dark">
       <Head>
         <title>Rawan Hamza</title>
         <meta
@@ -84,6 +85,10 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col items-center">
                   <i className="fab fa-microsoft text-8xl text-gray-800"></i>
+                  <span className="text-lg text-gray-800 py-2">.NET</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <i className="fas fa-fire-flame-curved text-8xl text-gray-800"></i>
                   <span className="text-lg text-gray-800 py-2">Blazor</span>
                 </div>
                 <div className="flex flex-col items-center">
@@ -112,7 +117,12 @@ export default function Home() {
           <div>
             <h3 className="text-5xl py-1 dark:text-white py-10">ABOUT ME</h3>
             <p className="text-xl py-1 leading-8 text-gray-800 dark:text-gray-200">
-              An experienced pharmacist with a passion for technology, I keep up to date with tech news, tools and latest frameworks. with a keen eye for writing and developing clean, maintainable and readable code. After finishing an intense learning experience at Northcoders bootcamp, I am ready to embark on my journey in this field.
+              An experienced pharmacist with a passion for technology, I keep up
+              to date with tech news, tools and latest frameworks. with a keen
+              eye for writing and developing clean, maintainable and readable
+              code. After finishing an intense learning experience at
+              Northcoders bootcamp, I am ready to embark on my journey in this
+              field.
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -146,7 +156,8 @@ export default function Home() {
                 TASK MANAGEMENT
               </h3>
               <p className="text-lg py-2">
-                Familiar with AGILE philosiphy, and SCRUM methodologies and Kanban
+                Familiar with AGILE philosiphy, and SCRUM methodologies and
+                Kanban
               </p>
               <div className="flex flex-wrap justify-center gap-9 py-9">
                 <div className="flex flex-col items-center">
@@ -171,13 +182,14 @@ export default function Home() {
             <div className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
               These projects have given me a better grasp of good software
               development practices such as writing clean, efficient and
-              maintainable code. I will keep updating this section with more projects as I learn new technologies in my journey
+              maintainable code. I will keep updating this section with more
+              projects as I learn new technologies in my journey
               <br />
               <br />
-              Hover on each project to see more details.
+              <b>Hover on each project to see more details.</b>
             </div>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="grid grid-rows-1 grid-flow-col gap-4 py-10 max-w-screen-4xl">
             <div className="basis-1/3 flex-1 border-4 border-teal-600 rounded-lg">
               <a
                 href="https://rwn-news.netlify.app/"
@@ -196,8 +208,8 @@ export default function Home() {
                   <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-90 transition-all duration-300 opacity-0 hover:opacity-100">
                     <div className="flex flex-wrap justify-center">
                       <div className="flex flex-col items-center">
-                        <div className="py-4 px-3">
-                          This project uses a RESTful API {""}
+                        <div className="block py-4 px-3">
+                          Uses a RESTful API {""}
                           <a
                             href="https://rwn-news.onrender.com/api"
                             className="no-underline hover:underline text-teal-400"
@@ -216,7 +228,7 @@ export default function Home() {
                           >
                             here
                           </a>
-                          {""} and anywhere else to view this project
+                          {""} and click anywhere else to view this project
                         </div>
                       </div>
                       <div className="flex flex-row items-center py-6">
@@ -271,11 +283,9 @@ export default function Home() {
                   <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-90 transition-all duration-300 opacity-0 hover:opacity-100">
                     <div className="flex flex-wrap justify-center">
                       <div className="flex flex-col items-center">
-                        <div className="py-4 px-3">
-                          A chat application that contains rooms to discuss
-                          different topics, it contains a chat bot that greets
-                          and notifies other users when another user joins or
-                          leaves. you can find the Github repo {""}
+                        <div className=" h-fit py-4 px-3">
+                          Chat in different rooms, contains a chat bot that
+                          sends notifications. you can find the Github repo {""}
                           <a
                             href="https://github.com/Rawan-Hamza/RWN-Chat"
                             className="no-underline hover:underline text-teal-400"
@@ -314,6 +324,70 @@ export default function Home() {
                             width={50}
                           />
                           <p className="py-1">Express</p>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1 border-4 border-teal-600 rounded-lg">
+              <a href="https://tictacgo.fun/" target="_blank" rel="noreferrer">
+                <div className="relative">
+                  <Image
+                    className="object-cover rounded-md"
+                    width={"100%"}
+                    height={"100%"}
+                    layout="responsive"
+                    src={tictacgo}
+                    alt="website collage"
+                  />
+                  <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-90 transition-all duration-300 opacity-0 hover:opacity-100">
+                    <div className="flex flex-wrap justify-center">
+                      <div className="flex flex-col items-center">
+                        <div className=" py-4 px-3">
+                          TicTacGo is an attempt at building the classic
+                          TicTacToe game in .NET 7. The solution uses Blazor for
+                          its frontend and SignalR for the real-time
+                          interactivity. Github repo {""}
+                          <a
+                            href="https://github.com/jwankhalaf-cx/tictacgo"
+                            className="no-underline hover:underline text-teal-400"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            here
+                          </a>
+                          {""} and click anywhere else to view this project
+                        </div>
+                      </div>
+                      <div className="flex flex-row items-center py-6">
+                        <span className="grid justify-items-center px-3">
+                          <Image
+                            src="https://img.icons8.com/fluency/50/email-sign.png"
+                            alt="email-sign"
+                            width="50"
+                            height="50"
+                          />
+                          <p className="py-1">MS Blazor</p>
+                        </span>
+                        <span className="grid justify-items-center px-3">
+                          <Image
+                            src="https://img.icons8.com/officel/50/cellular-network.png"
+                            alt="cellular-network"
+                            width="50"
+                            height="50"
+                          />
+                          <p className="py-1">SignalR</p>
+                        </span>
+                        <span className="grid justify-items-center px-3">
+                          <Image
+                            src="https://img.icons8.com/plasticine/50/tailwind_css.png"
+                            alt="tailwind_css"
+                            width="50"
+                            height="50"
+                          />
+                          <p className="py-1">Tailwind CSS</p>
                         </span>
                       </div>
                     </div>
