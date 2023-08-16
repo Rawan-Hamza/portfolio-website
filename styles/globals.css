@@ -23,3 +23,13 @@ a {
 .hover-blur:hover > div.absolute > div {
   filter: blur(3px);
 }
+
+@media screen and (max-width: 1485px) {
+  .overlay {
+      display: none;
+      max-width: inherit;
+      max-height: inherit;
+      overflow-x: hidden;
+  }
+
+}

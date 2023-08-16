@@ -206,7 +206,7 @@ export default function Home() {
                     alt="website collage"
                   />
                   <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-90 transition-all duration-300 opacity-0 hover:opacity-100">
-                    <div className="flex flex-wrap justify-center">
+                    <div className="overlay flex flex-wrap justify-center">
                       <div className="flex flex-col items-center">
                         <div className="block py-4 px-3">
                           Uses a RESTful API {""}
@@ -281,7 +281,7 @@ export default function Home() {
                     alt="website collage"
                   />
                   <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-90 transition-all duration-300 opacity-0 hover:opacity-100">
-                    <div className="flex flex-wrap justify-center">
+                    <div className="overlay flex flex-wrap justify-center">
                       <div className="flex flex-col items-center">
                         <div className=" h-fit py-4 px-3">
                           Chat in different rooms, contains a chat bot that
@@ -343,7 +343,7 @@ export default function Home() {
                     alt="website collage"
                   />
                   <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-90 transition-all duration-300 opacity-0 hover:opacity-100">
-                    <div className="flex flex-wrap justify-center">
+                    <div className="overlay flex flex-wrap justify-center">
                       <div className="flex flex-col items-center">
                         <div className=" py-4 px-3">
                           TicTacGo is an attempt at building the classic
