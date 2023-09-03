@@ -4,9 +4,10 @@ import rawan from "../public/rawan.png";
 import design from "../public/design.png";
 import scrum from "../public/scrum.png";
 import Image from "next/image";
-import rwnNews from "../public/rwn.png";
-import rwnChat from "../public/rwnchat.png";
-import tictacgo from "../public/tictacgo.png";
+import Chat from "./Chat";
+import News from "./News";
+import Tictacgo from "./Tictacgo";
+import TechStack from "./TechStack";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
               RAWAN HAMZA
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              JUNIOR FULL STACK DEVELOPER
+              JUNIOR SOFTWARE DEVELOPER
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl"></p>
             <div className="text-7xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
@@ -67,53 +68,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div>
-            <h3 className="text-5xl py-1 dark:text-white">CURRENT STACK</h3>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <div className="flex flex-wrap justify-center gap-10 py-1">
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-js text-8xl text-gray-800"></i>
-                  <span className="text-lg text-gray-800 py-2">JavaScript</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-node-js text-8xl text-gray-800"></i>
-                  <span className="text-lg text-gray-800 py-2">NodeJS</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-react text-8xl text-gray-800"></i>
-                  <span className="text-lg text-gray-800 py-2">ReactJS</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-microsoft text-8xl text-gray-800"></i>
-                  <span className="text-lg text-gray-800 py-2">.NET</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fas fa-fire-flame-curved text-8xl text-gray-800"></i>
-                  <span className="text-lg text-gray-800 py-2">Blazor</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-php text-8xl text-gray-800"></i>
-                  <span className="text-lg text-gray-800 py-2">PHP</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fas fa-database text-8xl text-gray-800"></i>
-                  <span className="text-lg text-gray-800 py-2">PSQL</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-html5 text-8xl text-gray-800"></i>
-                  <span className="text-lg text-gray-800 py-2">HTML</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-css3 text-8xl text-gray-800"></i>
-                  <span className="text-lg text-gray-800 py-2">CSS</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fas fa-crown text-8xl text-gray-800"></i>
-                  <span className="text-lg text-gray-800 py-2">JEST</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <TechStack />
           <div>
             <h3 className="text-5xl py-1 dark:text-white py-10">ABOUT ME</h3>
             <p className="text-xl py-1 leading-8 text-gray-800 dark:text-gray-200">
@@ -190,211 +145,9 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-rows-1 grid-flow-col gap-4 py-10 max-w-screen-4xl">
-            <div className="basis-1/3 flex-1 border-4 border-teal-600 rounded-lg">
-              <a
-                href="https://rwn-news.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="relative">
-                  <Image
-                    className="object-cover rounded-md"
-                    width={"100%"}
-                    height={"100%"}
-                    layout="responsive"
-                    src={rwnNews}
-                    alt="website collage"
-                  />
-                  <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-90 transition-all duration-300 opacity-0 hover:opacity-100">
-                    <div className="overlay flex flex-wrap justify-center">
-                      <div className="flex flex-col items-center">
-                        <div className="block py-4 px-3">
-                          Uses a RESTful API {""}
-                          <a
-                            href="https://rwn-news.onrender.com/api"
-                            className="no-underline hover:underline text-teal-400"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            here
-                          </a>
-                          {""} that connects to the northcoders NC-NEWS
-                          database, back end project can be found {""}
-                          <a
-                            href="https://github.com/Rawan-Hamza/rwn-news"
-                            className="no-underline hover:underline text-teal-400"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            here
-                          </a>
-                          {""} and click anywhere else to view this project
-                        </div>
-                      </div>
-                      <div className="flex flex-row items-center py-6">
-                        <span className="grid justify-items-center px-3">
-                          <Image
-                            src="https://img.icons8.com/color/50/null/react-native.png"
-                            alt="stack icon"
-                            height={50}
-                            width={50}
-                          />
-                          <p className="py-1">ReactJS</p>
-                        </span>
-                        <span className="grid justify-items-center px-3">
-                          <Image
-                            src="https://img.icons8.com/fluency/50/null/node-js.png"
-                            alt="stack icon"
-                            height={50}
-                            width={50}
-                          />
-                          <p className="py-1">NodeJS</p>
-                        </span>
-                        <span className="grid justify-items-center px-3">
-                          <Image
-                            src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/50/null/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-color-tal-revivo.png"
-                            alt="stack icon"
-                            height={50}
-                            width={50}
-                          />
-                          <p className="py-1">PSQL</p>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1 border-4 border-teal-600 rounded-lg">
-              <a
-                href="https://rwn-chat.adaptable.app"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="relative">
-                  <Image
-                    className="object-cover rounded-md"
-                    width={"100%"}
-                    height={"100%"}
-                    layout="responsive"
-                    src={rwnChat}
-                    alt="website collage"
-                  />
-                  <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-90 transition-all duration-300 opacity-0 hover:opacity-100">
-                    <div className="overlay flex flex-wrap justify-center">
-                      <div className="flex flex-col items-center">
-                        <div className=" h-fit py-4 px-3">
-                          Chat in different rooms, contains a chat bot that
-                          sends notifications. you can find the Github repo {""}
-                          <a
-                            href="https://github.com/Rawan-Hamza/RWN-Chat"
-                            className="no-underline hover:underline text-teal-400"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            here
-                          </a>
-                          {""} and anywhere else to view this project
-                        </div>
-                      </div>
-                      <div className="flex flex-row items-center py-6">
-                        <span className="grid justify-items-center px-3">
-                          <Image
-                            src="https://img.icons8.com/fluency/50/null/node-js.png"
-                            alt="stack icon"
-                            height={50}
-                            width={50}
-                          />
-                          <p className="py-1">NodeJS</p>
-                        </span>
-                        <span className="grid justify-items-center px-3">
-                          <Image
-                            src="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/50/null/external-socket-ecology-vitaliy-gorbachev-blue-vitaly-gorbachev.png"
-                            alt="stack icon"
-                            height={50}
-                            width={50}
-                          />
-                          <p className="py-1">Socket.io</p>
-                        </span>
-                        <span className="grid justify-items-center px-3">
-                          <Image
-                            src="https://img.icons8.com/external-bearicons-blue-bearicons/50/null/external-Express-post-office-bearicons-blue-bearicons.png"
-                            alt="stack icon"
-                            height={50}
-                            width={50}
-                          />
-                          <p className="py-1">Express</p>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1 border-4 border-teal-600 rounded-lg">
-              <a href="https://tictacgo.fun/" target="_blank" rel="noreferrer">
-                <div className="relative">
-                  <Image
-                    className="object-cover rounded-md"
-                    width={"100%"}
-                    height={"100%"}
-                    layout="responsive"
-                    src={tictacgo}
-                    alt="website collage"
-                  />
-                  <div className="absolute inset-0 flex justify-center items-center text-white text-xl font-bold bg-black bg-opacity-90 transition-all duration-300 opacity-0 hover:opacity-100">
-                    <div className="overlay flex flex-wrap justify-center">
-                      <div className="flex flex-col items-center">
-                        <div className=" py-4 px-3">
-                          TicTacGo is an attempt at building the classic
-                          TicTacToe game in .NET 7. The solution uses Blazor for
-                          its frontend and SignalR for the real-time
-                          interactivity. Github repo {""}
-                          <a
-                            href="https://github.com/jwankhalaf-cx/tictacgo"
-                            className="no-underline hover:underline text-teal-400"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            here
-                          </a>
-                          {""} and click anywhere else to view this project
-                        </div>
-                      </div>
-                      <div className="flex flex-row items-center py-6">
-                        <span className="grid justify-items-center px-3">
-                          <Image
-                            src="https://img.icons8.com/fluency/50/email-sign.png"
-                            alt="email-sign"
-                            width="50"
-                            height="50"
-                          />
-                          <p className="py-1">MS Blazor</p>
-                        </span>
-                        <span className="grid justify-items-center px-3">
-                          <Image
-                            src="https://img.icons8.com/officel/50/cellular-network.png"
-                            alt="cellular-network"
-                            width="50"
-                            height="50"
-                          />
-                          <p className="py-1">SignalR</p>
-                        </span>
-                        <span className="grid justify-items-center px-3">
-                          <Image
-                            src="https://img.icons8.com/plasticine/50/tailwind_css.png"
-                            alt="tailwind_css"
-                            width="50"
-                            height="50"
-                          />
-                          <p className="py-1">Tailwind CSS</p>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
+            <News />
+            <Chat />
+            <Tictacgo />
           </div>
         </section>
       </main>
