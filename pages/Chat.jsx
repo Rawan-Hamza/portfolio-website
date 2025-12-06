@@ -1,11 +1,11 @@
 import Image from "next/image";
-import React from "react";
 import rwnChat from "../public/rwnchat.png";
+import Link from "next/link";
 
 function Chat() {
   return (
     <div className="basis-1/3 flex-1 border-4 border-teal-600 rounded-lg">
-      <a href="https://rwn-chat.adaptable.app" target="_blank" rel="noreferrer">
+      <Link href="https://rwn-chat.adaptable.app" target="_blank" rel="noreferrer">
         <div className="relative">
           <Image
             className="object-cover rounded-md"
@@ -64,7 +64,7 @@ function Chat() {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

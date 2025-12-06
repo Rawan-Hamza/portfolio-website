@@ -1,11 +1,11 @@
 import Image from "next/image";
-import React from "react";
 import rwnNews from "../public/rwn.png";
+import Link from "next/link";
 
 function News() {
   return (
     <div className="basis-1/3 flex-1 border-4 border-teal-600 rounded-lg">
-      <a href="https://rwn-news.netlify.app/" target="_blank" rel="noreferrer">
+      <Link href="https://rwn-news.netlify.app/" target="_blank" rel="noreferrer">
         <div className="relative">
           <Image
             className="object-cover rounded-md"
@@ -73,7 +73,7 @@ function News() {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

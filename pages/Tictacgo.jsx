@@ -1,11 +1,11 @@
 import Image from "next/image";
-import React from "react";
 import tictacgo from "../public/tictacgo.png";
+import Link from "next/link";
 
 function Tictacgo() {
   return (
     <div className="basis-1/3 flex-1 border-4 border-teal-600 rounded-lg">
-      <a href="https://tictacgo.fun/" target="_blank" rel="noreferrer">
+      <Link href="https://tictacgo.fun/" target="_blank" rel="noreferrer">
         <div className="relative">
           <Image
             className="object-cover rounded-md"
@@ -65,7 +65,7 @@ function Tictacgo() {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

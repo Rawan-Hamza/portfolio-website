@@ -7,24 +7,24 @@ function TechStack() {
       <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
         <div className="flex flex-wrap justify-center gap-10 py-1">
           <div className="flex flex-col items-center">
-            <i className="fab fa-js text-8xl text-gray-800"></i>
-            <span className="text-lg text-gray-800 py-2">JavaScript</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <i className="fab fa-node-js text-8xl text-gray-800"></i>
-            <span className="text-lg text-gray-800 py-2">NodeJS</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <i className="fab fa-react text-8xl text-gray-800"></i>
-            <span className="text-lg text-gray-800 py-2">ReactJS</span>
-          </div>
-          <div className="flex flex-col items-center">
             <i className="fab fa-microsoft text-8xl text-gray-800"></i>
             <span className="text-lg text-gray-800 py-2">.NET</span>
           </div>
           <div className="flex flex-col items-center">
-            <i className="fas fa-fire-flame-curved text-8xl text-gray-800"></i>
-            <span className="text-lg text-gray-800 py-2">Blazor</span>
+            <i className="fab fa-node-js text-8xl text-gray-800"></i>
+            <span className="text-lg text-gray-800 py-2">Node.js</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <i className="fab fa-square-js text-8xl text-gray-800"></i>
+            <span className="text-lg text-gray-800 py-2">TypeScript</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <i className="fab fa-react text-8xl text-gray-800"></i>
+            <span className="text-lg text-gray-800 py-2">React.js</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <i className="fa-brands fa-angular text-8xl text-gray-800"></i>
+            <span className="text-lg text-gray-800 py-2">Angular</span>
           </div>
           <div className="flex flex-col items-center">
             <i className="fab fa-php text-8xl text-gray-800"></i>
@@ -32,7 +32,7 @@ function TechStack() {
           </div>
           <div className="flex flex-col items-center">
             <i className="fas fa-database text-8xl text-gray-800"></i>
-            <span className="text-lg text-gray-800 py-2">PSQL</span>
+            <span className="text-lg text-gray-800 py-2">SQL</span>
           </div>
           <div className="flex flex-col items-center">
             <i className="fab fa-html5 text-8xl text-gray-800"></i>

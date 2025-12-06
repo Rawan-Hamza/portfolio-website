@@ -27,7 +27,7 @@ export default function Home() {
               RAWAN HAMZA
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              JUNIOR SOFTWARE DEVELOPER
+              SOLUTIONS DEVELOPER
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl"></p>
             <div className="text-7xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
@@ -48,7 +48,7 @@ export default function Home() {
                 <AiFillGithub />
               </a>
               <a
-                href="https://drive.google.com/file/d/1pL90PCQ5tSPeRhgkbq2E2wca9uCbZtaX/view?usp=share_link"
+                href="https://drive.google.com/file/d/14dGFlsTUuq4XompNaJ8PiW3pxaYsRat4/view?usp=drive_link"
                 target="_blank"
                 className="cursor-pointer"
                 rel="noreferrer"
@@ -72,12 +72,11 @@ export default function Home() {
           <div>
             <h3 className="text-5xl py-1 dark:text-white py-10">ABOUT ME</h3>
             <p className="text-xl py-1 leading-8 text-gray-800 dark:text-gray-200">
-              An experienced pharmacist with a passion for technology, I keep up
-              to date with tech news, tools and latest frameworks. with a keen
-              eye for writing and developing clean, maintainable and readable
-              code. After finishing an intense learning experience at
-              Northcoders bootcamp, I am ready to embark on my journey in this
-              field.
+              Results-driven Software Developer with expertise in scalable web solutions for
+              healthcare and enterprise environments. Delivered impactful applications serving
+              thousands of users across the north west, optimizing processes and improving system reliability using .NET, React,
+              TypeScript, Azure, and cloud-native practices. Proven collaborator skilled at translating
+              stakeholder needs into secure, high-performance software.
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -145,9 +144,9 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-rows-1 grid-flow-col gap-4 py-10 max-w-screen-4xl">
+            <Tictacgo />
             <News />
             <Chat />
-            <Tictacgo />
           </div>
         </section>
       </main>
